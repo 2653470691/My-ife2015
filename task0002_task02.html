@@ -1,23 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
-
 <body>
-    <input type="text" id="number1">
-    <input type="text" id="number2">
-    <span id="result"></span>
-    <button id="addbtn"></button>
-
     <script src="util.js"></script>
     <script>
         var srcObj = {
-
             a: 1,
             b: {
                 b1: ["hello", "hi"],
@@ -25,12 +17,13 @@
 
             }
         }
-
+        
         var abObj=srcObj;
         var tarObj=cloneObject(srcObj);
 
         srcObj.a=2;
         srcObj.b.b1[0]="hello";
+        
         console.log(abObj.a);
         console.log(abObj.b.b1[0]);
 
